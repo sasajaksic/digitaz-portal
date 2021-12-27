@@ -13,7 +13,12 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserModule,
     CommonModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      closeButton: true,
+      enableHtml: true,
+      progressBar: true,
+      positionClass: 'toast-top-center',
+    }),
     ReactiveFormsModule,
   ],
   providers: [],
