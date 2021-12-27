@@ -6,9 +6,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { ImageCropperModule } from 'ngx-image-cropper';
+import { ImageCropperComponent } from './promotions/image-cropper/image-cropper.component';
 
 @NgModule({
-  declarations: [AppComponent, PromotionDetalComponent],
+  declarations: [AppComponent, PromotionDetalComponent, ImageCropperComponent],
   imports: [
     BrowserModule,
     CommonModule,
@@ -20,6 +22,7 @@ import { ToastrModule } from 'ngx-toastr';
       positionClass: 'toast-top-center',
     }),
     ReactiveFormsModule,
+    ImageCropperModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
