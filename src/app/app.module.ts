@@ -8,9 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { ImageCropperComponent } from './promotions/image-cropper/image-cropper.component';
+import { SocialsComponent } from './socials/socials.component';
 
 @NgModule({
-  declarations: [AppComponent, PromotionDetalComponent, ImageCropperComponent],
+  declarations: [AppComponent, PromotionDetalComponent, ImageCropperComponent, SocialsComponent],
   imports: [
     BrowserModule,
     CommonModule,
